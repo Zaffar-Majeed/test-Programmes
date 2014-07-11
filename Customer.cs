@@ -23,10 +23,10 @@ namespace my_firstprog
             Console.WriteLine("This is base Display");
         }
 
-        public Customer(String nm, int ag)
+        public Customer(String name, int age)
         {
-            name = nm;
-            Age = ag;
+            this.name = name;
+            Age = age;
         }
 
         public Customer() { }
