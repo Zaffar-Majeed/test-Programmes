@@ -1,0 +1,6 @@
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\bin\Debug\my firstprog.exe.config
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\bin\Debug\my firstprog.exe
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\bin\Debug\my firstprog.pdb
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\obj\Debug\my firstprog.csprojResolveAssemblyReference.cache
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\obj\Debug\my firstprog.exe
+c:\users\zaffar\documents\visual studio 2013\Projects\my firstprog\obj\Debug\my firstprog.pdb
