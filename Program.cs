@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace my_firstprog
+namespace My_firstprog
 {
     class Program
     {
@@ -22,20 +22,20 @@ namespace my_firstprog
 
             /*---- Array implementation  -----*/
 
-          //  ArrayExample();
+          // ArrayExample();
 
             /*----   list implementation -----*/
 
-          //  ListExample();
+          // ListExample();
 
             /*---- Queue -----*/
-          //  QueueExample();
+          // QueueExample();
             
 
 
             /*----  Dictionary Implementation-----*/
 
-         //   DictionaryExample();
+         // DictionaryExample();
             
 
             /*----  LINQ Implementation-----*/
@@ -63,8 +63,8 @@ namespace my_firstprog
         private static void BasicObjectOrientation()
         {
  	         Customer cust = new Customer();
-            cust.setter("rahim");
-            Console.WriteLine(cust.getter());
+            cust.Setter("rahim");
+            Console.WriteLine(cust.Getter());
 
             Customer cust2 = new Customer()
             {
@@ -75,13 +75,13 @@ namespace my_firstprog
             Customer cust3 = new Customer("salma", 12);
 
             Dealer dlr = new Dealer("akib", 23, "00-aaB");
-            Console.WriteLine(dlr.Age + "\t" + dlr.name + "\t" + dlr.Dealer_Code);
+            Console.WriteLine(dlr.Age + "\t" + dlr.Name + "\t" + dlr.Dealer_Code);
             dlr.Display();
         }
 
         private static void ArrayExample()
         {
- 	         var customers = new Customer[5];
+ 	      var customers = new Customer[5];
             Random r = new Random();
             for (int i = 0; i < 5; i++)
             {
@@ -99,27 +99,24 @@ namespace my_firstprog
         {
             List<int> mylist = new List<int>();
  	        List<int> customerlist = new List<int>();
-                    mylist.Add(5);
-                    mylist.Add(3);
-                    mylist.RemoveAt(0);
-                    foreach (int lst in mylist)
-                    {
-                        Console.Write(lst + "\t");
+            mylist.Add(5);
+            mylist.Add(3);
+            mylist.RemoveAt(0);
+            foreach (int lst in mylist)
+            {
+                 Console.Write(lst + "\t");
+            }
 
-                    }
-
-
-                    List<Customer> customerlist2 = new List<Customer>();
-                    for (int i = 0; i < 5; i++)
-                    {
-                        Customer cust = new Customer("item-" + i, (i * i + 20));
-                        customerlist2.Add(cust);
-                    }
-
-                    foreach (Customer cust in customerlist2)
-                    {
-                        Console.WriteLine("Name: {0} \t Age: {1}", cust.name, cust.Age);
-                    }
+            List<Customer> customerlist2 = new List<Customer>();
+            for (int i = 0; i < 5; i++)
+            {
+             Customer cust = new Customer("item-" + i, (i * i + 20));
+             customerlist2.Add(cust);
+            }
+            foreach (Customer cust in customerlist2)
+            {
+               Console.WriteLine("Name: {0} \t Age: {1}", cust.Name, cust.Age);
+            }
         }
 
         private static void QueueExample()
@@ -179,7 +176,7 @@ namespace my_firstprog
 
             foreach (Customer custs in customerQuery)
             {
-                Console.WriteLine(custs.name + "\t " + custs.Age);
+                Console.WriteLine(custs.Name + "\t " + custs.Age);
             }
         }
 
