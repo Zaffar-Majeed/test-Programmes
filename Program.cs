@@ -14,33 +14,33 @@ namespace my_firstprog
             
 
             /*----- Basic of language -----*/
-            basicsexample();
+           // BasicExample();
 
             /*----- Object Orientation -----*/
 
-           basicObjectOrientation();
+          // BasicObjectOrientation();
 
             /*---- Array implementation  -----*/
 
-            arrayexample();
+          //  ArrayExample();
 
             /*----   list implementation -----*/
 
-            listexample();
+          //  ListExample();
 
             /*---- Queue -----*/
-            queueexample();
+          //  QueueExample();
             
 
 
             /*----  Dictionary Implementation-----*/
 
-            dictionaryexample();
+         //   DictionaryExample();
             
 
             /*----  LINQ Implementation-----*/
 
-            linqexapmle();
+            LinqExapmle();
             
             
 
@@ -48,7 +48,7 @@ namespace my_firstprog
 
         }
 
-        private static void basicsexample()
+        private static void BasicExample()
         {
  	        Console.WriteLine("welcome myself to .Net again");
             var x = Console.ReadLine();
@@ -60,7 +60,7 @@ namespace my_firstprog
             x = Console.ReadLine();
         }
 
-        private static void basicObjectOrientation()
+        private static void BasicObjectOrientation()
         {
  	         Customer cust = new Customer();
             cust.setter("rahim");
@@ -79,7 +79,7 @@ namespace my_firstprog
             dlr.Display();
         }
 
-        private static void arrayexample()
+        private static void ArrayExample()
         {
  	         var customers = new Customer[5];
             Random r = new Random();
@@ -95,8 +95,9 @@ namespace my_firstprog
             }
         }
 
-        private static void listexample()
+        private static void ListExample()
         {
+            List<int> mylist = new List<int>();
  	        List<int> customerlist = new List<int>();
                     mylist.Add(5);
                     mylist.Add(3);
@@ -107,29 +108,29 @@ namespace my_firstprog
 
                     }
 
-                    List<Customer> customerlist = new List<Customer>();
 
+                    List<Customer> customerlist2 = new List<Customer>();
                     for (int i = 0; i < 5; i++)
                     {
                         Customer cust = new Customer("item-" + i, (i * i + 20));
-                        customerlist.Add(cust);
+                        customerlist2.Add(cust);
                     }
 
-                    foreach (Customer cust in customerlist)
+                    foreach (Customer cust in customerlist2)
                     {
                         Console.WriteLine("Name: {0} \t Age: {1}", cust.name, cust.Age);
                     }
         }
 
-        private static void queueexample()
+        private static void QueueExample()
         {
-           var myque = new Queue<int>();
+            var myque = new Queue<int>();
             myque.Enqueue(5);
             myque.Enqueue(10);
 
+        }
 
-
-        private static void dictionaryexample()
+        private static void DictionaryExample()
         {
             Dictionary<String, Dealer> dealer_list = new Dictionary<string, Dealer>();  // dealer here is a class
 
@@ -150,7 +151,7 @@ namespace my_firstprog
             Console.WriteLine("Value: {0}", dlr.Age);
         }
 
-        private static void linqexapmle()
+        private static void LinqExapmle()
         {
             int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
             var mylinqquery =

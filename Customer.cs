@@ -10,6 +10,13 @@ namespace my_firstprog
     {
          public String name;
          public int Age { get; set; }
+         public Customer() { }
+         public Customer(String name, int age)
+         {
+             this.name = name;
+             Age = age;
+         }
+
         public void setter(String name)
         {
             this.name = name;
@@ -23,12 +30,8 @@ namespace my_firstprog
             Console.WriteLine("This is base Display");
         }
 
-        public Customer(String name, int age)
-        {
-            this.name = name;
-            Age = age;
-        }
+        
 
-        public Customer() { }
+      
     }
 }
